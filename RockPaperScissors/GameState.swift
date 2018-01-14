@@ -11,6 +11,16 @@ import Foundation
 enum GameState {
     case start, win, lose, draw
     
+    static func getFromSigns(playerSign: Sign, computerSign: Sign) -> GameState {
+        if playerSign.defeats(computerSign) {
+            return .win
+        } else if computerSign.defeats(playerSign) {
+            return .lose
+        } else {
+            return .draw
+        }
+    }
+    
     var text : String {
         switch self {
         case .start:

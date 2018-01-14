@@ -25,16 +25,6 @@ enum Sign {
         }
     }
     
-    static func getGameStateFromSigns(playerSign: Sign, computerSign: Sign) -> GameState {
-        if playerSign.defeats(computerSign) {
-            return .win
-        } else if computerSign.defeats(playerSign) {
-            return .lose
-        } else {
-            return .draw
-        }
-    }
-    
     func defeats(_ otherSign: Sign) -> Bool {
         switch (self, otherSign) {
         case (.rock, .scissors), (.paper, .rock), (.scissors, .paper):

@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     func play(playerSign: Sign) {
         let computerSign = Sign.random()
-        let gameState = Sign.getGameStateFromSigns(playerSign: playerSign, computerSign: computerSign)
+        let gameState = GameState.getFromSigns(playerSign: playerSign, computerSign: computerSign)
         updateUI(gameState: gameState)
         computerSignLabel.text = computerSign.emoji
         for button in playerChoiceButtons {
