@@ -12,6 +12,8 @@
 		1811EE93200A9A5C007561C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1811EE91200A9A5C007561C2 /* Main.storyboard */; };
 		1811EE95200A9A5C007561C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1811EE94200A9A5C007561C2 /* Assets.xcassets */; };
 		1811EE98200A9A5C007561C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1811EE96200A9A5C007561C2 /* LaunchScreen.storyboard */; };
+		1811EEA0200A9DC2007561C2 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811EE9F200A9DC2007561C2 /* Sign.swift */; };
+		1811EEA2200AAE9D007561C2 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811EEA1200AAE9D007561C2 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1811EE94200A9A5C007561C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1811EE97200A9A5C007561C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1811EE99200A9A5C007561C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1811EE9F200A9DC2007561C2 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		1811EEA1200AAE9D007561C2 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				1811EE8D200A9A5C007561C2 /* AppDelegate.swift */,
 				1811EE8F200A9A5C007561C2 /* ViewController.swift */,
+				1811EEA1200AAE9D007561C2 /* GameState.swift */,
+				1811EE9F200A9DC2007561C2 /* Sign.swift */,
 				1811EE91200A9A5C007561C2 /* Main.storyboard */,
 				1811EE94200A9A5C007561C2 /* Assets.xcassets */,
 				1811EE96200A9A5C007561C2 /* LaunchScreen.storyboard */,
@@ -137,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1811EE90200A9A5C007561C2 /* ViewController.swift in Sources */,
+				1811EEA2200AAE9D007561C2 /* GameState.swift in Sources */,
 				1811EE8E200A9A5C007561C2 /* AppDelegate.swift in Sources */,
+				1811EEA0200A9DC2007561C2 /* Sign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +283,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAALF57372;
 				INFOPLIST_FILE = RockPaperScissors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.RockPaperScissors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylevdr.RockPaperScissors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +299,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AAALF57372;
 				INFOPLIST_FILE = RockPaperScissors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.RockPaperScissors;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylevdr.RockPaperScissors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
