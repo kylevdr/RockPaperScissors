@@ -40,7 +40,7 @@ enum Sign {
             return "✊"
         case .paper:
             return "✋"
-        case.scissors:
+        case .scissors:
             return "✌️"
         }
     }
